@@ -11,7 +11,7 @@ const App = () => {
   const [ videos, search ] = useVideos('張智霖');
 
   useEffect( () => {
-    setDefaultTermMessage('...loading');
+    setDefaultTermMessage('...loading, please wait.');
     setSelectedVideo(videos[0]);
   }, [videos]);
 
